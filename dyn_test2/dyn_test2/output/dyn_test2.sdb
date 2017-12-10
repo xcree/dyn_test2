@@ -1,0 +1,493 @@
+[p PSOC GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip CY8C21323MLF ]
+"39 ./lib\PWM8_1.h
+[v F276 `(v  1 t 0 ]
+"36 ./lib\Counter16_1.h
+[v F228 `(v  1 t 0 ]
+"37
+[v F231 `(v  1 t 0 ]
+"39
+[v F237 `(ui  1 t 2 ]
+"38
+[v F234 `(v  1 t 0 ]
+"40
+[v F240 `(v  1 t 0 ]
+"42 ./lib\TX8_2.h
+[v F178 `(v  1 t 0 ]
+"48
+[v F190 `(v  1 t 0 ]
+"45
+[v F187 `(uc  1 t 1 ]
+"54
+[v F210 `(v  1 t 0 ]
+"55
+[v F213 `(v  1 t 0 ]
+"50
+[v F196 `(v  1 t 0 ]
+"43
+[v F181 `(v  1 t 0 ]
+"199 ./main.c
+[v F357 `(v  1 t 0 ]
+"36 ./lib\Counter16_1.h
+[v _Counter16_1_DisableInt `BR(v  1 e 0 0 ]
+"37
+[v _Counter16_1_Start `BR(v  1 e 0 0 ]
+"38
+[v _Counter16_1_Stop `BR(v  1 e 0 0 ]
+"39
+[v _Counter16_1_wReadCounter `BR(ui  1 e 2 0 ]
+"40
+[v _Counter16_1_WritePeriod `BR(v  1 e 0 0 ]
+"4 ./lib\PSoCDynamic.h
+[v _LoadConfig_dyn_test2 `(v  1 e 0 0 ]
+"8
+[v _LoadConfig_ADC_Config `(v  1 e 0 0 ]
+"9
+[v _UnloadConfig_ADC_Config `(v  1 e 0 0 ]
+"10
+[v _IsADC_ConfigLoaded `(uc  1 e 1 0 ]
+"39 ./lib\PWM8_1.h
+[v _PWM8_1_Start `BR(v  1 e 0 0 ]
+"42 ./lib\TX8_2.h
+[v _TX8_2_Start `BR(v  1 e 0 0 ]
+"43
+[v _TX8_2_Stop `BR(v  1 e 0 0 ]
+"45
+[v _TX8_2_bReadTxStatus `BR(uc  1 e 1 0 ]
+"48
+[v _TX8_2_CPutString `BR(v  1 e 0 0 ]
+"50
+[v _TX8_2_PutChar `BR(v  1 e 0 0 ]
+"54
+[v _TX8_2_PutSHexInt `BR(v  1 e 0 0 ]
+"55
+[v _TX8_2_PutCRLF `BR(v  1 e 0 0 ]
+"29 ./main.c
+[v _main `(v  1 e 0 0 ]
+"199
+[v _MyGpioISR_int3 `I(v  1 e 0 @0 ]
+"307
+[v _My_TX `(i  1 e 2 0 ]
+"385
+[v _led_t `(i  1 e 2 0 ]
+"73 ./lib\Counter16_1.h
+[v _Counter16_1_COUNTER_LSB_REG `Auc  1 e 1 @32 ]
+"75
+[v _Counter16_1_COUNTER_MSB_REG `Auc  1 e 1 @36 ]
+"77
+[v _Counter16_1_PERIOD_LSB_REG `Auc  1 e 1 @33 ]
+"79
+[v _Counter16_1_PERIOD_MSB_REG `Auc  1 e 1 @37 ]
+"81
+[v _Counter16_1_COMPARE_LSB_REG `Auc  1 e 1 @34 ]
+"83
+[v _Counter16_1_COMPARE_MSB_REG `Auc  1 e 1 @38 ]
+"85
+[v _Counter16_1_CONTROL_LSB_REG `Auc  1 e 1 @35 ]
+"87
+[v _Counter16_1_CONTROL_MSB_REG `Auc  1 e 1 @39 ]
+"89
+[v _Counter16_1_FUNC_LSB_REG `Auc  1 e 1 @288 ]
+"91
+[v _Counter16_1_FUNC_MSB_REG `Auc  1 e 1 @292 ]
+"93
+[v _Counter16_1_INPUT_LSB_REG `Auc  1 e 1 @289 ]
+"95
+[v _Counter16_1_INPUT_MSB_REG `Auc  1 e 1 @293 ]
+"97
+[v _Counter16_1_OUTPUT_LSB_REG `Auc  1 e 1 @290 ]
+"99
+[v _Counter16_1_OUTPUT_MSB_REG `Auc  1 e 1 @294 ]
+"101
+[v _Counter16_1_INT_REG `Auc  1 e 1 @225 ]
+"19 ./lib\PSoCGPIOINT.h
+[v _int4_Data_ADDR `Auc  1 e 1 @4 ]
+"21
+[v _int4_DriveMode_0_ADDR `Auc  1 e 1 @260 ]
+"23
+[v _int4_DriveMode_1_ADDR `Auc  1 e 1 @261 ]
+"25
+[v _int4_DriveMode_2_ADDR `Auc  1 e 1 @7 ]
+"27
+[v _int4_GlobalSelect_ADDR `Auc  1 e 1 @6 ]
+"29
+[v _int4_IntCtrl_0_ADDR `Auc  1 e 1 @262 ]
+"31
+[v _int4_IntCtrl_1_ADDR `Auc  1 e 1 @263 ]
+"33
+[v _int4_IntEn_ADDR `Auc  1 e 1 @5 ]
+"37
+[v _int3_Data_ADDR `Auc  1 e 1 @4 ]
+"39
+[v _int3_DriveMode_0_ADDR `Auc  1 e 1 @260 ]
+"41
+[v _int3_DriveMode_1_ADDR `Auc  1 e 1 @261 ]
+"43
+[v _int3_DriveMode_2_ADDR `Auc  1 e 1 @7 ]
+"45
+[v _int3_GlobalSelect_ADDR `Auc  1 e 1 @6 ]
+"47
+[v _int3_IntCtrl_0_ADDR `Auc  1 e 1 @262 ]
+"49
+[v _int3_IntCtrl_1_ADDR `Auc  1 e 1 @263 ]
+"51
+[v _int3_IntEn_ADDR `Auc  1 e 1 @5 ]
+"55
+[v _led3_Data_ADDR `Auc  1 e 1 @0 ]
+"57
+[v _led3_DriveMode_0_ADDR `Auc  1 e 1 @256 ]
+"59
+[v _led3_DriveMode_1_ADDR `Auc  1 e 1 @257 ]
+"61
+[v _led3_DriveMode_2_ADDR `Auc  1 e 1 @3 ]
+"63
+[v _led3_GlobalSelect_ADDR `Auc  1 e 1 @2 ]
+"65
+[v _led3_IntCtrl_0_ADDR `Auc  1 e 1 @258 ]
+"67
+[v _led3_IntCtrl_1_ADDR `Auc  1 e 1 @259 ]
+"69
+[v _led3_IntEn_ADDR `Auc  1 e 1 @1 ]
+"73
+[v _int13_Data_ADDR `Auc  1 e 1 @4 ]
+"75
+[v _int13_DriveMode_0_ADDR `Auc  1 e 1 @260 ]
+"77
+[v _int13_DriveMode_1_ADDR `Auc  1 e 1 @261 ]
+"79
+[v _int13_DriveMode_2_ADDR `Auc  1 e 1 @7 ]
+"81
+[v _int13_GlobalSelect_ADDR `Auc  1 e 1 @6 ]
+"83
+[v _int13_IntCtrl_0_ADDR `Auc  1 e 1 @262 ]
+"85
+[v _int13_IntCtrl_1_ADDR `Auc  1 e 1 @263 ]
+"87
+[v _int13_IntEn_ADDR `Auc  1 e 1 @5 ]
+"91
+[v _in5_Data_ADDR `Auc  1 e 1 @0 ]
+"93
+[v _in5_DriveMode_0_ADDR `Auc  1 e 1 @256 ]
+"95
+[v _in5_DriveMode_1_ADDR `Auc  1 e 1 @257 ]
+"97
+[v _in5_DriveMode_2_ADDR `Auc  1 e 1 @3 ]
+"99
+[v _in5_GlobalSelect_ADDR `Auc  1 e 1 @2 ]
+"101
+[v _in5_IntCtrl_0_ADDR `Auc  1 e 1 @258 ]
+"103
+[v _in5_IntCtrl_1_ADDR `Auc  1 e 1 @259 ]
+"105
+[v _in5_IntEn_ADDR `Auc  1 e 1 @1 ]
+"109
+[v _led7_Data_ADDR `Auc  1 e 1 @0 ]
+"111
+[v _led7_DriveMode_0_ADDR `Auc  1 e 1 @256 ]
+"113
+[v _led7_DriveMode_1_ADDR `Auc  1 e 1 @257 ]
+"115
+[v _led7_DriveMode_2_ADDR `Auc  1 e 1 @3 ]
+"117
+[v _led7_GlobalSelect_ADDR `Auc  1 e 1 @2 ]
+"119
+[v _led7_IntCtrl_0_ADDR `Auc  1 e 1 @258 ]
+"121
+[v _led7_IntCtrl_1_ADDR `Auc  1 e 1 @259 ]
+"123
+[v _led7_IntEn_ADDR `Auc  1 e 1 @1 ]
+"75 ./lib\PWM8_1.h
+[v _PWM8_1_COUNTER_REG `Auc  1 e 1 @44 ]
+"77
+[v _PWM8_1_PERIOD_REG `Auc  1 e 1 @45 ]
+"79
+[v _PWM8_1_COMPARE_REG `Auc  1 e 1 @46 ]
+"81
+[v _PWM8_1_CONTROL_REG `Auc  1 e 1 @47 ]
+"83
+[v _PWM8_1_FUNC_REG `Auc  1 e 1 @300 ]
+"85
+[v _PWM8_1_INPUT_REG `Auc  1 e 1 @301 ]
+"87
+[v _PWM8_1_OUTPUT_REG `Auc  1 e 1 @302 ]
+"89
+[v _PWM8_1_INT_REG `Auc  1 e 1 @225 ]
+"98 ./lib\TX8_2.h
+[v _TX8_2_CONTROL_REG `Auc  1 e 1 @47 ]
+"100
+[v _TX8_2_TX_SHIFT_REG `Auc  1 e 1 @44 ]
+"102
+[v _TX8_2_TX_BUFFER_REG `Auc  1 e 1 @45 ]
+"104
+[v _TX8_2_FUNC_REG `Auc  1 e 1 @300 ]
+"106
+[v _TX8_2_INPUT_REG `Auc  1 e 1 @301 ]
+"108
+[v _TX8_2_OUTPUT_REG `Auc  1 e 1 @302 ]
+"12 ./main.c
+[v _k `s  1 e 2 0 ]
+"13
+[v _m `uc  1 e 1 0 ]
+"14
+[v _mat `[55]uc  1 e 55 0 ]
+[v _b_mat `[55]uc  1 e 55 0 ]
+[v _b_mat1 `[55]uc  1 e 55 0 ]
+"17
+[v _Port1Shadow `uc  1 e 1 0 ]
+"18
+[v _b `i  1 e 2 0 ]
+[v _c `i  1 e 2 0 ]
+[v _d `i  1 e 2 0 ]
+[v _h `i  1 e 2 0 ]
+[v _a `i  1 e 2 0 ]
+[v _y `i  1 e 2 0 ]
+[v _r `i  1 e 2 0 ]
+"24
+[v _b_IntCount `ui  1 e 2 0 ]
+[v _p_num `ui  1 e 2 0 ]
+"26
+[v _flag `s  1 e 2 0 ]
+"61 C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2\m8c.h
+[v _PRT0DR `Auc  1 e 1 @0 ]
+"63
+[v _PRT0IE `Auc  1 e 1 @1 ]
+"65
+[v _PRT0GS `Auc  1 e 1 @2 ]
+"67
+[v _PRT0DM2 `Auc  1 e 1 @3 ]
+"70
+[v _PRT1DR `Auc  1 e 1 @4 ]
+"72
+[v _PRT1IE `Auc  1 e 1 @5 ]
+"74
+[v _PRT1GS `Auc  1 e 1 @6 ]
+"76
+[v _PRT1DM2 `Auc  1 e 1 @7 ]
+"85
+[v _DBB00DR0 `Auc  1 e 1 @32 ]
+"87
+[v _DBB00DR1 `Auc  1 e 1 @33 ]
+"89
+[v _DBB00DR2 `Auc  1 e 1 @34 ]
+"91
+[v _DBB00CR0 `Auc  1 e 1 @35 ]
+"95
+[v _DBB01DR0 `Auc  1 e 1 @36 ]
+"97
+[v _DBB01DR1 `Auc  1 e 1 @37 ]
+"99
+[v _DBB01DR2 `Auc  1 e 1 @38 ]
+"101
+[v _DBB01CR0 `Auc  1 e 1 @39 ]
+"105
+[v _DCB02DR0 `Auc  1 e 1 @40 ]
+"107
+[v _DCB02DR1 `Auc  1 e 1 @41 ]
+"109
+[v _DCB02DR2 `Auc  1 e 1 @42 ]
+"111
+[v _DCB02CR0 `Auc  1 e 1 @43 ]
+"115
+[v _DCB03DR0 `Auc  1 e 1 @44 ]
+"117
+[v _DCB03DR1 `Auc  1 e 1 @45 ]
+"119
+[v _DCB03DR2 `Auc  1 e 1 @46 ]
+"121
+[v _DCB03CR0 `Auc  1 e 1 @47 ]
+"128
+[v _AMX_IN `Auc  1 e 1 @96 ]
+"134
+[v _PWM_CR `Auc  1 e 1 @98 ]
+"140
+[v _CMP_CR0 `Auc  1 e 1 @100 ]
+"147
+[v _CMP_CR1 `Auc  1 e 1 @102 ]
+"152
+[v _ADC0_CR `Auc  1 e 1 @104 ]
+"161
+[v _ADC1_CR `Auc  1 e 1 @105 ]
+"171
+[v _ACE00CR1 `Auc  1 e 1 @114 ]
+"173
+[v _ACE00CR2 `Auc  1 e 1 @115 ]
+"177
+[v _ACE01CR1 `Auc  1 e 1 @118 ]
+"179
+[v _ACE01CR2 `Auc  1 e 1 @119 ]
+"183
+[v _ASE10CR0 `Auc  1 e 1 @128 ]
+"187
+[v _ASE11CR0 `Auc  1 e 1 @132 ]
+"193
+[v _TMP_DR0 `Auc  1 e 1 @108 ]
+"195
+[v _TMP_DR1 `Auc  1 e 1 @109 ]
+"197
+[v _TMP_DR2 `Auc  1 e 1 @110 ]
+"199
+[v _TMP_DR3 `Auc  1 e 1 @111 ]
+"209
+[v _RDI0RI `Auc  1 e 1 @176 ]
+"211
+[v _RDI0SYN `Auc  1 e 1 @177 ]
+"213
+[v _RDI0IS `Auc  1 e 1 @178 ]
+"215
+[v _RDI0LT0 `Auc  1 e 1 @179 ]
+"217
+[v _RDI0LT1 `Auc  1 e 1 @180 ]
+"219
+[v _RDI0RO0 `Auc  1 e 1 @181 ]
+"221
+[v _RDI0RO1 `Auc  1 e 1 @182 ]
+"227
+[v _I2C_CFG `Auc  1 e 1 @214 ]
+"239
+[v _I2C_SCR `Auc  1 e 1 @215 ]
+"250
+[v _I2C_DR `Auc  1 e 1 @216 ]
+"253
+[v _I2C_MSCR `Auc  1 e 1 @217 ]
+"263
+[v _INT_CLR0 `Auc  1 e 1 @218 ]
+"265
+[v _INT_CLR1 `Auc  1 e 1 @219 ]
+"267
+[v _INT_CLR3 `Auc  1 e 1 @221 ]
+"270
+[v _INT_MSK3 `Auc  1 e 1 @222 ]
+"275
+[v _INT_MSK0 `Auc  1 e 1 @224 ]
+"284
+[v _INT_MSK1 `Auc  1 e 1 @225 ]
+"291
+[v _INT_VC `Auc  1 e 1 @226 ]
+"294
+[v _RES_WDT `Auc  1 e 1 @227 ]
+"298
+[v _DEC_CR0 `Auc  1 e 1 @230 ]
+"300
+[v _DEC_CR1 `Auc  1 e 1 @231 ]
+"309
+[v _CPU_F `Auc  1 e 1 @247 ]
+"312
+[v _CPU_SCR1 `Auc  1 e 1 @254 ]
+"320
+[v _CPU_SCR0 `Auc  1 e 1 @255 ]
+"341
+[v _PRT0DM0 `Auc  1 e 1 @256 ]
+"343
+[v _PRT0DM1 `Auc  1 e 1 @257 ]
+"345
+[v _PRT0IC0 `Auc  1 e 1 @258 ]
+"347
+[v _PRT0IC1 `Auc  1 e 1 @259 ]
+"350
+[v _PRT1DM0 `Auc  1 e 1 @260 ]
+"352
+[v _PRT1DM1 `Auc  1 e 1 @261 ]
+"354
+[v _PRT1IC0 `Auc  1 e 1 @262 ]
+"356
+[v _PRT1IC1 `Auc  1 e 1 @263 ]
+"365
+[v _DBB00FN `Auc  1 e 1 @288 ]
+"367
+[v _DBB00IN `Auc  1 e 1 @289 ]
+"369
+[v _DBB00OU `Auc  1 e 1 @290 ]
+"373
+[v _DBB01FN `Auc  1 e 1 @292 ]
+"375
+[v _DBB01IN `Auc  1 e 1 @293 ]
+"377
+[v _DBB01OU `Auc  1 e 1 @294 ]
+"381
+[v _DCB02FN `Auc  1 e 1 @296 ]
+"383
+[v _DCB02IN `Auc  1 e 1 @297 ]
+"385
+[v _DCB02OU `Auc  1 e 1 @298 ]
+"389
+[v _DCB03FN `Auc  1 e 1 @300 ]
+"391
+[v _DCB03IN `Auc  1 e 1 @301 ]
+"393
+[v _DCB03OU `Auc  1 e 1 @302 ]
+"401
+[v _CLK_CR0 `Auc  1 e 1 @352 ]
+"406
+[v _CLK_CR1 `Auc  1 e 1 @353 ]
+"411
+[v _ABF_CR0 `Auc  1 e 1 @354 ]
+"415
+[v _AMD_CR0 `Auc  1 e 1 @355 ]
+"419
+[v _CMP_GO_EN `Auc  1 e 1 @356 ]
+"428
+[v _AMD_CR1 `Auc  1 e 1 @358 ]
+"432
+[v _ALT_CR0 `Auc  1 e 1 @359 ]
+"437
+[v _CLK_CR3 `Auc  1 e 1 @363 ]
+"448
+[v _GDI_O_IN `Auc  1 e 1 @464 ]
+"450
+[v _GDI_E_IN `Auc  1 e 1 @465 ]
+"452
+[v _GDI_O_OU `Auc  1 e 1 @466 ]
+"454
+[v _GDI_E_OU `Auc  1 e 1 @467 ]
+"461
+[v _OSC_GO_EN `Auc  1 e 1 @477 ]
+"472
+[v _OSC_CR4 `Auc  1 e 1 @478 ]
+"476
+[v _OSC_CR3 `Auc  1 e 1 @479 ]
+"479
+[v _OSC_CR0 `Auc  1 e 1 @480 ]
+"499
+[v _OSC_CR1 `Auc  1 e 1 @481 ]
+"504
+[v _OSC_CR2 `Auc  1 e 1 @482 ]
+"511
+[v _VLT_CR `Auc  1 e 1 @483 ]
+"521
+[v _VLT_CMP `Auc  1 e 1 @484 ]
+"528
+[v _ADC0_TR `Auc  1 e 1 @485 ]
+"530
+[v _ADC1_TR `Auc  1 e 1 @486 ]
+"533
+[v _IMO_TR `Auc  1 e 1 @488 ]
+"535
+[v _ILO_TR `Auc  1 e 1 @489 ]
+"537
+[v _BDG_TR `Auc  1 e 1 @490 ]
+"539
+[v _ECO_TR `Auc  1 e 1 @491 ]
+"542
+[v _FLS_PR1 `Auc  1 e 1 @506 ]
+"29 ./main.c
+[v _main `(v  1 e 0 0 ]
+{
+"195
+} 0
+"307
+[v _My_TX `(i  1 e 2 0 ]
+{
+"383
+} 0
+"199
+[v _MyGpioISR_int3 `I(v  1 e 0 @0 ]
+{
+"297
+} 0
+"385
+[v _led_t `(i  1 e 2 0 ]
+{
+"390
+} 0

@@ -1,0 +1,3 @@
+-H+./output/dyn_test2.sym -M./output/dyn_test2.map -O./output/dyn_test2.obj 
+ ./obj/main.p1    
+ C:/DOCUME~1/KKP_E2/MYDOCU~1/PSOCDE~1.2PR/DYN_TE~1/DYN_TE~1/DYN_TE~1/lib/libpsoc.lib C:/DOCUME~1/KKP_E2/MYDOCU~1/PSOCDE~1.2PR/DYN_TE~1/DYN_TE~1/DYN_TE~1/lib/libpsoc.lpp C:\PROGRA~1\HI-TEC~1\HCPSOC\PRO\9.61/lib/psoc-c.lib  

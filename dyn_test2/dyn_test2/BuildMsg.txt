@@ -1,0 +1,72 @@
+Starting MAKE...
+creating project.mk 
+
+lib/counter16_1.asm
+
+lib/counter16_1int.asm
+
+lib/psocconfig.asm
+
+lib/psocconfigtbl.asm
+
+lib/psocdynamic.asm
+
+lib/psocdynamicint.asm
+
+lib/psocgpioint.asm
+
+lib/pwm8_1.asm
+
+lib/pwm8_1int.asm
+
+lib/tx8_2.asm
+
+lib/tx8_2int.asm
+
+lib/tx8_2plus.asm
+
+module lib/obj/tx8_2plus.obj defines no symbols (warning)
+
+./boot.asm
+
+./main.c
+
+!W ./main.c(87):(361) function declared implicit int (warning)
+
+!W ./main.c(232):(361) function declared implicit int (warning)
+
+sed: can't read HTlinkOpts.lkp: No such file or directory
+
+expanded_libs = 
+
+Linking..
+
+HI-TECH C COMPILER (Cypress PSOC) Pro  V9.61PL6
+
+Copyright (C) 1984-2009 HI-TECH SOFTWARE
+
+licensed for evaluation purposes only
+
+this licence will expire on Sat, 30 Jun 2012
+
+!W ./main.c(199):(1353) interrupt function requires address (warning)
+
+
+
+Memory Summary:
+
+    Program space        used   77Ch (  1916) of  1000h bytes   ( 46.8%)
+
+    Data space           used    CFh (   207) of   100h bytes   ( 80.9%)
+
+
+
+Comparative memory usage (excludes absolute areas and stack variables)
+
+    ROM used:  1604 bytes
+
+    RAM used:   190 bytes
+
+ 
+dyn_test2 - 0 error(s) 3 warning(s) 15:05:17
+

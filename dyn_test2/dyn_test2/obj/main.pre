@@ -1,0 +1,1107 @@
+
+# 1 "./main.c"
+
+# 18 "C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2\m8c.h"
+typedef unsigned char BOOL;
+typedef unsigned char BYTE;
+typedef signed char CHAR;
+typedef unsigned int WORD;
+typedef signed int INT;
+typedef unsigned long DWORD;
+typedef signed long LONG;
+
+
+# 60
+#pragma ioport PRT0DR: 0x000
+BYTE PRT0DR;
+#pragma ioport PRT0IE: 0x001
+BYTE PRT0IE;
+#pragma ioport PRT0GS: 0x002
+BYTE PRT0GS;
+#pragma ioport PRT0DM2: 0x003
+BYTE PRT0DM2;
+
+#pragma ioport PRT1DR: 0x004
+BYTE PRT1DR;
+#pragma ioport PRT1IE: 0x005
+BYTE PRT1IE;
+#pragma ioport PRT1GS: 0x006
+BYTE PRT1GS;
+#pragma ioport PRT1DM2: 0x007
+BYTE PRT1DM2;
+
+
+# 84
+#pragma ioport DBB00DR0: 0x020
+BYTE DBB00DR0;
+#pragma ioport DBB00DR1: 0x021
+BYTE DBB00DR1;
+#pragma ioport DBB00DR2: 0x022
+BYTE DBB00DR2;
+#pragma ioport DBB00CR0: 0x023
+BYTE DBB00CR0;
+
+
+#pragma ioport DBB01DR0: 0x024
+BYTE DBB01DR0;
+#pragma ioport DBB01DR1: 0x025
+BYTE DBB01DR1;
+#pragma ioport DBB01DR2: 0x026
+BYTE DBB01DR2;
+#pragma ioport DBB01CR0: 0x027
+BYTE DBB01CR0;
+
+
+#pragma ioport DCB02DR0: 0x028
+BYTE DCB02DR0;
+#pragma ioport DCB02DR1: 0x029
+BYTE DCB02DR1;
+#pragma ioport DCB02DR2: 0x02A
+BYTE DCB02DR2;
+#pragma ioport DCB02CR0: 0x02B
+BYTE DCB02CR0;
+
+
+#pragma ioport DCB03DR0: 0x02C
+BYTE DCB03DR0;
+#pragma ioport DCB03DR1: 0x02D
+BYTE DCB03DR1;
+#pragma ioport DCB03DR2: 0x02E
+BYTE DCB03DR2;
+#pragma ioport DCB03CR0: 0x02F
+BYTE DCB03CR0;
+
+
+
+
+
+#pragma ioport AMX_IN: 0x060
+BYTE AMX_IN;
+
+
+
+
+#pragma ioport PWM_CR: 0x062
+BYTE PWM_CR;
+
+
+
+
+#pragma ioport CMP_CR0: 0x064
+BYTE CMP_CR0;
+
+
+
+
+
+#pragma ioport CMP_CR1: 0x066
+BYTE CMP_CR1;
+
+
+
+#pragma ioport ADC0_CR: 0x068
+BYTE ADC0_CR;
+
+
+# 160
+#pragma ioport ADC1_CR: 0x069
+BYTE ADC1_CR;
+
+
+# 170
+#pragma ioport ACE00CR1: 0x72
+BYTE ACE00CR1;
+#pragma ioport ACE00CR2: 0x73
+BYTE ACE00CR2;
+
+
+#pragma ioport ACE01CR1: 0x76
+BYTE ACE01CR1;
+#pragma ioport ACE01CR2: 0x77
+BYTE ACE01CR2;
+
+
+#pragma ioport ASE10CR0: 0x80
+BYTE ASE10CR0;
+
+
+#pragma ioport ASE11CR0: 0x84
+BYTE ASE11CR0;
+
+
+
+
+#pragma ioport TMP_DR0: 0x6C
+BYTE TMP_DR0;
+#pragma ioport TMP_DR1: 0x6D
+BYTE TMP_DR1;
+#pragma ioport TMP_DR2: 0x6E
+BYTE TMP_DR2;
+#pragma ioport TMP_DR3: 0x6F
+BYTE TMP_DR3;
+
+
+# 208
+#pragma ioport RDI0RI: 0xB0
+BYTE RDI0RI;
+#pragma ioport RDI0SYN: 0xB1
+BYTE RDI0SYN;
+#pragma ioport RDI0IS: 0xB2
+BYTE RDI0IS;
+#pragma ioport RDI0LT0: 0xB3
+BYTE RDI0LT0;
+#pragma ioport RDI0LT1: 0xB4
+BYTE RDI0LT1;
+#pragma ioport RDI0RO0: 0xB5
+BYTE RDI0RO0;
+#pragma ioport RDI0RO1: 0xB6
+BYTE RDI0RO1;
+
+
+
+
+#pragma ioport I2C_CFG: 0x0D6
+BYTE I2C_CFG;
+
+
+# 238
+#pragma ioport I2C_SCR: 0x0D7
+BYTE I2C_SCR;
+
+
+# 249
+#pragma ioport I2C_DR: 0x0D8
+BYTE I2C_DR;
+
+#pragma ioport I2C_MSCR: 0x0D9
+BYTE I2C_MSCR;
+
+
+# 262
+#pragma ioport INT_CLR0: 0x0DA
+BYTE INT_CLR0;
+#pragma ioport INT_CLR1: 0x0DB
+BYTE INT_CLR1;
+#pragma ioport INT_CLR3: 0x0DD
+BYTE INT_CLR3;
+
+#pragma ioport INT_MSK3: 0x0DE
+BYTE INT_MSK3;
+
+
+
+#pragma ioport INT_MSK0: 0x0E0
+BYTE INT_MSK0;
+
+
+# 283
+#pragma ioport INT_MSK1: 0x0E1
+BYTE INT_MSK1;
+
+
+
+
+
+#pragma ioport INT_VC: 0x0E2
+BYTE INT_VC;
+
+#pragma ioport RES_WDT: 0x0E3
+BYTE RES_WDT;
+
+
+#pragma ioport DEC_CR0: 0x0E6
+BYTE DEC_CR0;
+#pragma ioport DEC_CR1: 0x0E7
+BYTE DEC_CR1;
+
+
+# 308
+#pragma ioport CPU_F: 0xF7
+BYTE CPU_F;
+
+#pragma ioport CPU_SCR1: 0xFE
+BYTE CPU_SCR1;
+
+
+# 319
+#pragma ioport CPU_SCR0: 0xFF
+BYTE CPU_SCR0;
+
+
+# 340
+#pragma ioport PRT0DM0: 0x100
+BYTE PRT0DM0;
+#pragma ioport PRT0DM1: 0x101
+BYTE PRT0DM1;
+#pragma ioport PRT0IC0: 0x102
+BYTE PRT0IC0;
+#pragma ioport PRT0IC1: 0x103
+BYTE PRT0IC1;
+
+#pragma ioport PRT1DM0: 0x104
+BYTE PRT1DM0;
+#pragma ioport PRT1DM1: 0x105
+BYTE PRT1DM1;
+#pragma ioport PRT1IC0: 0x106
+BYTE PRT1IC0;
+#pragma ioport PRT1IC1: 0x107
+BYTE PRT1IC1;
+
+
+# 364
+#pragma ioport DBB00FN: 0x120
+BYTE DBB00FN;
+#pragma ioport DBB00IN: 0x121
+BYTE DBB00IN;
+#pragma ioport DBB00OU: 0x122
+BYTE DBB00OU;
+
+
+#pragma ioport DBB01FN: 0x124
+BYTE DBB01FN;
+#pragma ioport DBB01IN: 0x125
+BYTE DBB01IN;
+#pragma ioport DBB01OU: 0x126
+BYTE DBB01OU;
+
+
+#pragma ioport DCB02FN: 0x128
+BYTE DCB02FN;
+#pragma ioport DCB02IN: 0x129
+BYTE DCB02IN;
+#pragma ioport DCB02OU: 0x12A
+BYTE DCB02OU;
+
+
+#pragma ioport DCB03FN: 0x12C
+BYTE DCB03FN;
+#pragma ioport DCB03IN: 0x12D
+BYTE DCB03IN;
+#pragma ioport DCB03OU: 0x12E
+BYTE DCB03OU;
+
+
+# 400
+#pragma ioport CLK_CR0: 0x160
+BYTE CLK_CR0;
+
+
+
+#pragma ioport CLK_CR1: 0x161
+BYTE CLK_CR1;
+
+
+
+#pragma ioport ABF_CR0: 0x162
+BYTE ABF_CR0;
+
+
+#pragma ioport AMD_CR0: 0x163
+BYTE AMD_CR0;
+
+
+#pragma ioport CMP_GO_EN: 0x164
+BYTE CMP_GO_EN;
+
+
+# 427
+#pragma ioport AMD_CR1: 0x166
+BYTE AMD_CR1;
+
+
+#pragma ioport ALT_CR0: 0x167
+BYTE ALT_CR0;
+
+
+
+#pragma ioport CLK_CR3: 0x16B
+BYTE CLK_CR3;
+
+
+# 447
+#pragma ioport GDI_O_IN: 0x1D0
+BYTE GDI_O_IN;
+#pragma ioport GDI_E_IN: 0x1D1
+BYTE GDI_E_IN;
+#pragma ioport GDI_O_OU: 0x1D2
+BYTE GDI_O_OU;
+#pragma ioport GDI_E_OU: 0x1D3
+BYTE GDI_E_OU;
+
+
+
+
+
+#pragma ioport OSC_GO_EN: 0x1DD
+BYTE OSC_GO_EN;
+
+
+# 471
+#pragma ioport OSC_CR4: 0x1DE
+BYTE OSC_CR4;
+
+
+#pragma ioport OSC_CR3: 0x1DF
+BYTE OSC_CR3;
+
+#pragma ioport OSC_CR0: 0x1E0
+BYTE OSC_CR0;
+
+
+# 498
+#pragma ioport OSC_CR1: 0x1E1
+BYTE OSC_CR1;
+
+
+
+#pragma ioport OSC_CR2: 0x1E2
+BYTE OSC_CR2;
+
+
+
+
+
+#pragma ioport VLT_CR: 0x1E3
+BYTE VLT_CR;
+
+
+# 520
+#pragma ioport VLT_CMP: 0x1E4
+BYTE VLT_CMP;
+
+
+
+
+
+#pragma ioport ADC0_TR: 0x1E5
+BYTE ADC0_TR;
+#pragma ioport ADC1_TR: 0x1E6
+BYTE ADC1_TR;
+
+#pragma ioport IMO_TR: 0x1E8
+BYTE IMO_TR;
+#pragma ioport ILO_TR: 0x1E9
+BYTE ILO_TR;
+#pragma ioport BDG_TR: 0x1EA
+BYTE BDG_TR;
+#pragma ioport ECO_TR: 0x1EB
+BYTE ECO_TR;
+
+#pragma ioport FLS_PR1: 0x1FA
+BYTE FLS_PR1;
+
+
+# 18 "./lib\PSoCGPIOINT.h"
+#pragma ioport int4_Data_ADDR: 0x4
+BYTE int4_Data_ADDR;
+#pragma ioport int4_DriveMode_0_ADDR: 0x104
+BYTE int4_DriveMode_0_ADDR;
+#pragma ioport int4_DriveMode_1_ADDR: 0x105
+BYTE int4_DriveMode_1_ADDR;
+#pragma ioport int4_DriveMode_2_ADDR: 0x7
+BYTE int4_DriveMode_2_ADDR;
+#pragma ioport int4_GlobalSelect_ADDR: 0x6
+BYTE int4_GlobalSelect_ADDR;
+#pragma ioport int4_IntCtrl_0_ADDR: 0x106
+BYTE int4_IntCtrl_0_ADDR;
+#pragma ioport int4_IntCtrl_1_ADDR: 0x107
+BYTE int4_IntCtrl_1_ADDR;
+#pragma ioport int4_IntEn_ADDR: 0x5
+BYTE int4_IntEn_ADDR;
+
+
+#pragma ioport int3_Data_ADDR: 0x4
+BYTE int3_Data_ADDR;
+#pragma ioport int3_DriveMode_0_ADDR: 0x104
+BYTE int3_DriveMode_0_ADDR;
+#pragma ioport int3_DriveMode_1_ADDR: 0x105
+BYTE int3_DriveMode_1_ADDR;
+#pragma ioport int3_DriveMode_2_ADDR: 0x7
+BYTE int3_DriveMode_2_ADDR;
+#pragma ioport int3_GlobalSelect_ADDR: 0x6
+BYTE int3_GlobalSelect_ADDR;
+#pragma ioport int3_IntCtrl_0_ADDR: 0x106
+BYTE int3_IntCtrl_0_ADDR;
+#pragma ioport int3_IntCtrl_1_ADDR: 0x107
+BYTE int3_IntCtrl_1_ADDR;
+#pragma ioport int3_IntEn_ADDR: 0x5
+BYTE int3_IntEn_ADDR;
+
+
+#pragma ioport led3_Data_ADDR: 0x0
+BYTE led3_Data_ADDR;
+#pragma ioport led3_DriveMode_0_ADDR: 0x100
+BYTE led3_DriveMode_0_ADDR;
+#pragma ioport led3_DriveMode_1_ADDR: 0x101
+BYTE led3_DriveMode_1_ADDR;
+#pragma ioport led3_DriveMode_2_ADDR: 0x3
+BYTE led3_DriveMode_2_ADDR;
+#pragma ioport led3_GlobalSelect_ADDR: 0x2
+BYTE led3_GlobalSelect_ADDR;
+#pragma ioport led3_IntCtrl_0_ADDR: 0x102
+BYTE led3_IntCtrl_0_ADDR;
+#pragma ioport led3_IntCtrl_1_ADDR: 0x103
+BYTE led3_IntCtrl_1_ADDR;
+#pragma ioport led3_IntEn_ADDR: 0x1
+BYTE led3_IntEn_ADDR;
+
+
+#pragma ioport int13_Data_ADDR: 0x4
+BYTE int13_Data_ADDR;
+#pragma ioport int13_DriveMode_0_ADDR: 0x104
+BYTE int13_DriveMode_0_ADDR;
+#pragma ioport int13_DriveMode_1_ADDR: 0x105
+BYTE int13_DriveMode_1_ADDR;
+#pragma ioport int13_DriveMode_2_ADDR: 0x7
+BYTE int13_DriveMode_2_ADDR;
+#pragma ioport int13_GlobalSelect_ADDR: 0x6
+BYTE int13_GlobalSelect_ADDR;
+#pragma ioport int13_IntCtrl_0_ADDR: 0x106
+BYTE int13_IntCtrl_0_ADDR;
+#pragma ioport int13_IntCtrl_1_ADDR: 0x107
+BYTE int13_IntCtrl_1_ADDR;
+#pragma ioport int13_IntEn_ADDR: 0x5
+BYTE int13_IntEn_ADDR;
+
+
+#pragma ioport in5_Data_ADDR: 0x0
+BYTE in5_Data_ADDR;
+#pragma ioport in5_DriveMode_0_ADDR: 0x100
+BYTE in5_DriveMode_0_ADDR;
+#pragma ioport in5_DriveMode_1_ADDR: 0x101
+BYTE in5_DriveMode_1_ADDR;
+#pragma ioport in5_DriveMode_2_ADDR: 0x3
+BYTE in5_DriveMode_2_ADDR;
+#pragma ioport in5_GlobalSelect_ADDR: 0x2
+BYTE in5_GlobalSelect_ADDR;
+#pragma ioport in5_IntCtrl_0_ADDR: 0x102
+BYTE in5_IntCtrl_0_ADDR;
+#pragma ioport in5_IntCtrl_1_ADDR: 0x103
+BYTE in5_IntCtrl_1_ADDR;
+#pragma ioport in5_IntEn_ADDR: 0x1
+BYTE in5_IntEn_ADDR;
+
+
+#pragma ioport led7_Data_ADDR: 0x0
+BYTE led7_Data_ADDR;
+#pragma ioport led7_DriveMode_0_ADDR: 0x100
+BYTE led7_DriveMode_0_ADDR;
+#pragma ioport led7_DriveMode_1_ADDR: 0x101
+BYTE led7_DriveMode_1_ADDR;
+#pragma ioport led7_DriveMode_2_ADDR: 0x3
+BYTE led7_DriveMode_2_ADDR;
+#pragma ioport led7_GlobalSelect_ADDR: 0x2
+BYTE led7_GlobalSelect_ADDR;
+#pragma ioport led7_IntCtrl_0_ADDR: 0x102
+BYTE led7_IntCtrl_0_ADDR;
+#pragma ioport led7_IntCtrl_1_ADDR: 0x103
+BYTE led7_IntCtrl_1_ADDR;
+#pragma ioport led7_IntEn_ADDR: 0x1
+BYTE led7_IntEn_ADDR;
+
+
+# 18 "./lib\TX8_2.h"
+#pragma fastcall16 TX8_2_SetTxIntMode
+#pragma fastcall16 TX8_2_EnableInt
+#pragma fastcall16 TX8_2_DisableInt
+#pragma fastcall16 TX8_2_Start
+#pragma fastcall16 TX8_2_Stop
+#pragma fastcall16 TX8_2_SendData
+#pragma fastcall16 TX8_2_bReadTxStatus
+
+
+#pragma fastcall16 TX8_2_PutSHexByte
+#pragma fastcall16 TX8_2_PutSHexInt
+#pragma fastcall16 TX8_2_CPutString
+#pragma fastcall16 TX8_2_PutString
+#pragma fastcall16 TX8_2_PutChar
+#pragma fastcall16 TX8_2_Write
+#pragma fastcall16 TX8_2_CWrite
+#pragma fastcall16 TX8_2_PutCRLF
+
+
+
+
+extern void TX8_2_SetTxIntMode(BYTE bTxIntMode);
+extern void TX8_2_EnableInt(void);
+extern void TX8_2_DisableInt(void);
+extern void TX8_2_Start(BYTE bParity);
+extern void TX8_2_Stop(void);
+extern void TX8_2_SendData(BYTE bTxData);
+extern BYTE TX8_2_bReadTxStatus(void);
+
+
+extern void TX8_2_CPutString(const char * szRomString);
+extern void TX8_2_PutString(char * szRamString);
+extern void TX8_2_PutChar(CHAR cData);
+extern void TX8_2_Write(char * szRamString, BYTE bCount);
+extern void TX8_2_CWrite(const char * szRomString, INT iCount);
+extern void TX8_2_PutSHexByte(BYTE bValue);
+extern void TX8_2_PutSHexInt(INT iValue);
+extern void TX8_2_PutCRLF(void);
+
+
+
+#pragma fastcall16 bTX8_2_ReadTxStatus
+extern BYTE bTX8_2_ReadTxStatus(void);
+
+
+# 97
+#pragma ioport TX8_2_CONTROL_REG: 0x02f
+BYTE TX8_2_CONTROL_REG;
+#pragma ioport TX8_2_TX_SHIFT_REG: 0x02c
+BYTE TX8_2_TX_SHIFT_REG;
+#pragma ioport TX8_2_TX_BUFFER_REG: 0x02d
+BYTE TX8_2_TX_BUFFER_REG;
+#pragma ioport TX8_2_FUNC_REG: 0x12c
+BYTE TX8_2_FUNC_REG;
+#pragma ioport TX8_2_INPUT_REG: 0x12d
+BYTE TX8_2_INPUT_REG;
+#pragma ioport TX8_2_OUTPUT_REG: 0x12e
+BYTE TX8_2_OUTPUT_REG;
+
+
+# 17 "./lib\Counter16_1.h"
+#pragma fastcall16 Counter16_1_EnableInt
+#pragma fastcall16 Counter16_1_DisableInt
+#pragma fastcall16 Counter16_1_Start
+#pragma fastcall16 Counter16_1_Stop
+#pragma fastcall16 Counter16_1_wReadCounter
+#pragma fastcall16 Counter16_1_WritePeriod
+#pragma fastcall16 Counter16_1_wReadCompareValue
+#pragma fastcall16 Counter16_1_WriteCompareValue
+
+
+
+
+#pragma fastcall16 wCounter16_1_ReadCounter
+#pragma fastcall16 wCounter16_1_ReadCompareValue
+
+
+
+
+extern void Counter16_1_EnableInt(void);
+extern void Counter16_1_DisableInt(void);
+extern void Counter16_1_Start(void);
+extern void Counter16_1_Stop(void);
+extern WORD Counter16_1_wReadCounter(void);
+extern void Counter16_1_WritePeriod(WORD wPeriod);
+extern WORD Counter16_1_wReadCompareValue(void);
+extern void Counter16_1_WriteCompareValue(WORD wCompareValue);
+
+
+
+
+extern WORD wCounter16_1_ReadCounter(void);
+extern WORD wCounter16_1_ReadCompareValue(void);
+
+
+# 72
+#pragma ioport Counter16_1_COUNTER_LSB_REG: 0x020
+BYTE Counter16_1_COUNTER_LSB_REG;
+#pragma ioport Counter16_1_COUNTER_MSB_REG: 0x024
+BYTE Counter16_1_COUNTER_MSB_REG;
+#pragma ioport Counter16_1_PERIOD_LSB_REG: 0x021
+BYTE Counter16_1_PERIOD_LSB_REG;
+#pragma ioport Counter16_1_PERIOD_MSB_REG: 0x025
+BYTE Counter16_1_PERIOD_MSB_REG;
+#pragma ioport Counter16_1_COMPARE_LSB_REG: 0x022
+BYTE Counter16_1_COMPARE_LSB_REG;
+#pragma ioport Counter16_1_COMPARE_MSB_REG: 0x026
+BYTE Counter16_1_COMPARE_MSB_REG;
+#pragma ioport Counter16_1_CONTROL_LSB_REG: 0x023
+BYTE Counter16_1_CONTROL_LSB_REG;
+#pragma ioport Counter16_1_CONTROL_MSB_REG: 0x027
+BYTE Counter16_1_CONTROL_MSB_REG;
+#pragma ioport Counter16_1_FUNC_LSB_REG: 0x120
+BYTE Counter16_1_FUNC_LSB_REG;
+#pragma ioport Counter16_1_FUNC_MSB_REG: 0x124
+BYTE Counter16_1_FUNC_MSB_REG;
+#pragma ioport Counter16_1_INPUT_LSB_REG: 0x121
+BYTE Counter16_1_INPUT_LSB_REG;
+#pragma ioport Counter16_1_INPUT_MSB_REG: 0x125
+BYTE Counter16_1_INPUT_MSB_REG;
+#pragma ioport Counter16_1_OUTPUT_LSB_REG: 0x122
+BYTE Counter16_1_OUTPUT_LSB_REG;
+#pragma ioport Counter16_1_OUTPUT_MSB_REG: 0x126
+BYTE Counter16_1_OUTPUT_MSB_REG;
+#pragma ioport Counter16_1_INT_REG: 0x0e1
+BYTE Counter16_1_INT_REG;
+
+
+# 17 "./lib\PWM8_1.h"
+#pragma fastcall16 PWM8_1_EnableInt
+#pragma fastcall16 PWM8_1_DisableInt
+#pragma fastcall16 PWM8_1_Start
+#pragma fastcall16 PWM8_1_Stop
+#pragma fastcall16 PWM8_1_bReadCounter
+#pragma fastcall16 PWM8_1_WritePeriod
+#pragma fastcall16 PWM8_1_bReadPulseWidth
+#pragma fastcall16 PWM8_1_WritePulseWidth
+
+
+
+
+#pragma fastcall16 bPWM8_1_ReadCounter
+#pragma fastcall16 bPWM8_1_ReadPulseWidth
+
+# 37
+extern void PWM8_1_EnableInt(void);
+extern void PWM8_1_DisableInt(void);
+extern void PWM8_1_Start(void);
+extern void PWM8_1_Stop(void);
+extern BYTE PWM8_1_bReadCounter(void);
+extern void PWM8_1_WritePeriod(BYTE bPeriod);
+extern BYTE PWM8_1_bReadPulseWidth(void);
+extern void PWM8_1_WritePulseWidth(BYTE bPulseWidth);
+
+
+
+
+extern BYTE bPWM8_1_ReadCounter(void);
+extern BYTE bPWM8_1_ReadPulseWidth(void);
+
+
+# 74
+#pragma ioport PWM8_1_COUNTER_REG: 0x02c
+BYTE PWM8_1_COUNTER_REG;
+#pragma ioport PWM8_1_PERIOD_REG: 0x02d
+BYTE PWM8_1_PERIOD_REG;
+#pragma ioport PWM8_1_COMPARE_REG: 0x02e
+BYTE PWM8_1_COMPARE_REG;
+#pragma ioport PWM8_1_CONTROL_REG: 0x02f
+BYTE PWM8_1_CONTROL_REG;
+#pragma ioport PWM8_1_FUNC_REG: 0x12c
+BYTE PWM8_1_FUNC_REG;
+#pragma ioport PWM8_1_INPUT_REG: 0x12d
+BYTE PWM8_1_INPUT_REG;
+#pragma ioport PWM8_1_OUTPUT_REG: 0x12e
+BYTE PWM8_1_OUTPUT_REG;
+#pragma ioport PWM8_1_INT_REG: 0x0e1
+BYTE PWM8_1_INT_REG;
+
+
+# 18 "./lib\PSoCGPIOINT.h"
+#pragma ioport int4_Data_ADDR: 0x4
+BYTE int4_Data_ADDR;
+#pragma ioport int4_DriveMode_0_ADDR: 0x104
+BYTE int4_DriveMode_0_ADDR;
+#pragma ioport int4_DriveMode_1_ADDR: 0x105
+BYTE int4_DriveMode_1_ADDR;
+#pragma ioport int4_DriveMode_2_ADDR: 0x7
+BYTE int4_DriveMode_2_ADDR;
+#pragma ioport int4_GlobalSelect_ADDR: 0x6
+BYTE int4_GlobalSelect_ADDR;
+#pragma ioport int4_IntCtrl_0_ADDR: 0x106
+BYTE int4_IntCtrl_0_ADDR;
+#pragma ioport int4_IntCtrl_1_ADDR: 0x107
+BYTE int4_IntCtrl_1_ADDR;
+#pragma ioport int4_IntEn_ADDR: 0x5
+BYTE int4_IntEn_ADDR;
+
+
+#pragma ioport int3_Data_ADDR: 0x4
+BYTE int3_Data_ADDR;
+#pragma ioport int3_DriveMode_0_ADDR: 0x104
+BYTE int3_DriveMode_0_ADDR;
+#pragma ioport int3_DriveMode_1_ADDR: 0x105
+BYTE int3_DriveMode_1_ADDR;
+#pragma ioport int3_DriveMode_2_ADDR: 0x7
+BYTE int3_DriveMode_2_ADDR;
+#pragma ioport int3_GlobalSelect_ADDR: 0x6
+BYTE int3_GlobalSelect_ADDR;
+#pragma ioport int3_IntCtrl_0_ADDR: 0x106
+BYTE int3_IntCtrl_0_ADDR;
+#pragma ioport int3_IntCtrl_1_ADDR: 0x107
+BYTE int3_IntCtrl_1_ADDR;
+#pragma ioport int3_IntEn_ADDR: 0x5
+BYTE int3_IntEn_ADDR;
+
+
+#pragma ioport led3_Data_ADDR: 0x0
+BYTE led3_Data_ADDR;
+#pragma ioport led3_DriveMode_0_ADDR: 0x100
+BYTE led3_DriveMode_0_ADDR;
+#pragma ioport led3_DriveMode_1_ADDR: 0x101
+BYTE led3_DriveMode_1_ADDR;
+#pragma ioport led3_DriveMode_2_ADDR: 0x3
+BYTE led3_DriveMode_2_ADDR;
+#pragma ioport led3_GlobalSelect_ADDR: 0x2
+BYTE led3_GlobalSelect_ADDR;
+#pragma ioport led3_IntCtrl_0_ADDR: 0x102
+BYTE led3_IntCtrl_0_ADDR;
+#pragma ioport led3_IntCtrl_1_ADDR: 0x103
+BYTE led3_IntCtrl_1_ADDR;
+#pragma ioport led3_IntEn_ADDR: 0x1
+BYTE led3_IntEn_ADDR;
+
+
+#pragma ioport int13_Data_ADDR: 0x4
+BYTE int13_Data_ADDR;
+#pragma ioport int13_DriveMode_0_ADDR: 0x104
+BYTE int13_DriveMode_0_ADDR;
+#pragma ioport int13_DriveMode_1_ADDR: 0x105
+BYTE int13_DriveMode_1_ADDR;
+#pragma ioport int13_DriveMode_2_ADDR: 0x7
+BYTE int13_DriveMode_2_ADDR;
+#pragma ioport int13_GlobalSelect_ADDR: 0x6
+BYTE int13_GlobalSelect_ADDR;
+#pragma ioport int13_IntCtrl_0_ADDR: 0x106
+BYTE int13_IntCtrl_0_ADDR;
+#pragma ioport int13_IntCtrl_1_ADDR: 0x107
+BYTE int13_IntCtrl_1_ADDR;
+#pragma ioport int13_IntEn_ADDR: 0x5
+BYTE int13_IntEn_ADDR;
+
+
+#pragma ioport in5_Data_ADDR: 0x0
+BYTE in5_Data_ADDR;
+#pragma ioport in5_DriveMode_0_ADDR: 0x100
+BYTE in5_DriveMode_0_ADDR;
+#pragma ioport in5_DriveMode_1_ADDR: 0x101
+BYTE in5_DriveMode_1_ADDR;
+#pragma ioport in5_DriveMode_2_ADDR: 0x3
+BYTE in5_DriveMode_2_ADDR;
+#pragma ioport in5_GlobalSelect_ADDR: 0x2
+BYTE in5_GlobalSelect_ADDR;
+#pragma ioport in5_IntCtrl_0_ADDR: 0x102
+BYTE in5_IntCtrl_0_ADDR;
+#pragma ioport in5_IntCtrl_1_ADDR: 0x103
+BYTE in5_IntCtrl_1_ADDR;
+#pragma ioport in5_IntEn_ADDR: 0x1
+BYTE in5_IntEn_ADDR;
+
+
+#pragma ioport led7_Data_ADDR: 0x0
+BYTE led7_Data_ADDR;
+#pragma ioport led7_DriveMode_0_ADDR: 0x100
+BYTE led7_DriveMode_0_ADDR;
+#pragma ioport led7_DriveMode_1_ADDR: 0x101
+BYTE led7_DriveMode_1_ADDR;
+#pragma ioport led7_DriveMode_2_ADDR: 0x3
+BYTE led7_DriveMode_2_ADDR;
+#pragma ioport led7_GlobalSelect_ADDR: 0x2
+BYTE led7_GlobalSelect_ADDR;
+#pragma ioport led7_IntCtrl_0_ADDR: 0x102
+BYTE led7_IntCtrl_0_ADDR;
+#pragma ioport led7_IntCtrl_1_ADDR: 0x103
+BYTE led7_IntCtrl_1_ADDR;
+#pragma ioport led7_IntEn_ADDR: 0x1
+BYTE led7_IntEn_ADDR;
+
+# 4 "./lib\PSoCDynamic.h"
+extern void LoadConfig_dyn_test2( void);
+extern void ReloadConfig_dyn_test2( void);
+extern void UnloadConfig_dyn_test2( void);
+extern char Isdyn_test2Loaded( void);
+extern void LoadConfig_ADC_Config( void);
+extern void UnloadConfig_ADC_Config( void);
+extern char IsADC_ConfigLoaded( void);
+extern void UnloadConfig_Total( void);
+
+
+# 10 "./main.c"
+#pragma interrupt_handler MyGpioISR_int3
+
+short j,k,l;
+char m;
+BOOL mat[55],b_mat[55],mat1[55],b_mat1[55];
+
+BYTE pwm1count;
+BYTE Port1Shadow;
+int a,b,c,d,e,f,g,h,i,n,r,y;
+int tx_timer;
+short pwm1_val;
+short p1tim;
+short c2count;
+
+unsigned int IntCount,b_IntCount,p_num;
+
+short flag;
+
+void main(void)
+{
+
+
+
+
+asm("or  F, 01h") ;
+(INT_MSK0 |= (0x20));
+
+# 45
+PWM8_1_Start();
+
+Counter16_1_DisableInt();
+Counter16_1_Start();
+
+# 57
+Port1Shadow = PRT0DR;
+Port1Shadow &= ~0x32;
+
+PRT0DR = Port1Shadow;
+
+while(1){
+
+
+
+if(Counter16_1_wReadCounter() <= 0x47e)
+{
+Counter16_1_Stop();
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Stop();
+
+
+
+m++;
+if(m>5)
+{
+flag=0;
+for (y=0; y<52; y++)
+{
+mat[y]=b_mat[y];
+}
+
+IntCount=p_num;
+p_num=0;
+b_IntCount=0;
+
+My_TX();
+}
+
+}
+
+# 97
+if (in5_Data_ADDR & 0x20)
+{
+
+# 106
+Port1Shadow |= 0x80;
+Port1Shadow &= ~0x32;
+
+PRT0DR = Port1Shadow;
+
+
+if(IsADC_ConfigLoaded()==0)
+{
+LoadConfig_ADC_Config();
+
+TX8_2_Start(0x00);
+
+TX8_2_CPutString("a=");
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutSHexInt(a);
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutCRLF();
+
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_CPutString("b=");
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutSHexInt(b);
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutCRLF();
+
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_CPutString("c=");
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutSHexInt(c);
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+TX8_2_PutCRLF();
+
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+
+
+}
+
+
+}
+
+else{
+
+
+
+if(IsADC_ConfigLoaded()== 1)
+{
+
+# 167
+UnloadConfig_ADC_Config();
+LoadConfig_dyn_test2();
+PWM8_1_Start();
+
+# 178
+}
+
+# 190
+}
+
+
+
+}
+}
+
+
+void MyGpioISR_int3(void)
+{
+
+h=0;
+
+if(flag ==0 )
+{
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Start();
+flag = 0x01;
+}
+
+
+if (int3_Data_ADDR & 0x8)
+{
+
+Counter16_1_Stop();
+
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Start();
+
+}
+
+if (~int3_Data_ADDR & 0x8)
+{
+
+p_num++;
+b_IntCount++;
+k++;
+a=Counter16_1_wReadCounter();
+
+
+if(a>=0x56c)
+{
+led_t();
+b=a;
+b_mat[p_num]=1;
+}
+if(a<0x56c)
+{
+
+b_mat[p_num]=0;
+c=a;
+}
+else
+{
+d=a;
+}
+
+Counter16_1_Stop();
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Start();
+}
+
+
+if (int4_Data_ADDR & 0x20)
+{
+
+Counter16_1_Stop();
+
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Start();
+
+}
+
+if (~int4_Data_ADDR & 0x20)
+{
+
+p_num++;
+b_IntCount++;
+k++;
+a=Counter16_1_wReadCounter();
+
+
+if(a>=0x56c)
+{
+led_t();
+b=a;
+b_mat1[p_num]=1;
+}
+if(a<0x56c)
+{
+
+b_mat1[p_num]=0;
+c=a;
+}
+else
+{
+d=a;
+}
+
+Counter16_1_Stop();
+Counter16_1_WritePeriod(0x5db);
+Counter16_1_Start();
+}
+
+
+
+
+}
+
+# 306
+My_TX(void)
+{
+
+
+if(IsADC_ConfigLoaded()==0)
+{
+LoadConfig_ADC_Config();
+
+TX8_2_Start(0x00);
+
+# 357
+for ( r = 0; r < 52; ++r )
+{
+if ( mat[r] == 1 )
+{
+TX8_2_PutChar('1');
+}
+else TX8_2_PutChar('0');
+}
+
+
+
+TX8_2_PutCRLF();
+
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+while( !( TX8_2_bReadTxStatus() & 0x20 ) );
+
+
+TX8_2_Stop();
+
+m=0;
+
+UnloadConfig_ADC_Config();
+LoadConfig_dyn_test2();
+PWM8_1_Start();
+
+}
+}
+led_t(void)
+{
+Port1Shadow = PRT0DR ;
+
+Port1Shadow ^= 0x80;
+PRT0DR = Port1Shadow;
+}
+
+led_on(void)
+{
+Port1Shadow = PRT0DR ;
+
+Port1Shadow |= 0x80;
+PRT0DR = Port1Shadow;
+}
+
+led_off(void)
+{
+Port1Shadow = PRT0DR ;
+
+Port1Shadow &= ~0x80;
+PRT0DR = Port1Shadow;
+}

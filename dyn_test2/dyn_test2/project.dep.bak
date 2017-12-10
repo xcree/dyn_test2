@@ -1,0 +1,40 @@
+# DO NOT DELETE
+./obj/main.p1 :  ./lib/COUNTE~1.H ./lib/PSoCAPI.h ./lib/PSOCDY~1.H\
+   ./lib/PSOCGP~1.H ./lib/PWM8_1.h ./lib/TX8_2.h\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.h
+./obj/boot.obj : \
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8ssc.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\lib\GLOBAL~1.INC\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/counter16_1.obj :  ./lib/COUNTE~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/counter16_1int.obj :  ./lib/COUNTE~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/psocconfig.obj :  ./lib/GLOBAL~1.INC ./lib/PSOCDY~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/psocconfigtbl.obj : \
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc
+./lib/obj/psocdynamic.obj :  ./lib/PSOCDY~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/psocdynamicint.obj :  ./lib/PSOCDY~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc
+./lib/obj/psocgpioint.obj :  ./lib/PSOCGP~1.INC\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc
+./lib/obj/pwm8_1.obj :  ./lib/PWM8_1.inc\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/pwm8_1int.obj :  ./lib/PWM8_1.inc\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/tx8_2.obj :  ./lib/TX8_2.inc\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/tx8_2int.obj :  ./lib/TX8_2.inc\
+   C:/PROGRA~1/Cypress/PSOCDE~1/5.2/Common/CY3E64~1/tools/include/CY8C21~2/m8c.inc\
+   C:\DOCUME~1\KKP_E2\MYDOCU~1\PSOCDE~1.2PR\DYN_TE~1\DYN_TE~1\DYN_TE~1\memory.inc
+./lib/obj/tx8_2plus.obj : 
